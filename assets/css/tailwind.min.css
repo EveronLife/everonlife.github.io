@@ -728,6 +728,10 @@ select {
   min-height: 100vh;
 }
 
+.min-h-full {
+  min-height: 100%;
+}
+
 .w-full {
   width: 100%;
 }
@@ -818,6 +822,10 @@ select {
   border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .scroll-smooth {
   scroll-behavior: smooth;
 }
@@ -869,6 +877,11 @@ select {
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#152727\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 39 39 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
