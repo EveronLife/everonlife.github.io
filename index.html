@@ -40,6 +40,12 @@
     <script src="https://kit.fontawesome.com/0d6c982c8a.js" crossorigin="anonymous"></script>
 
     <script src="//unpkg.com/alpinejs" defer></script>
+
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+    </style>
 </head>
 
 <body class="h-full" x-data="{showProjectDescription:false}">
@@ -159,6 +165,7 @@
         x-transition:leave-start="transform opacity-100 translate-y-0"
         x-transition:leave-end="transform opacity-0 translate-y-10"
         x-show.transition.200="showProjectDescription"
+        x-cloak
         class="absolute top-0 h-[100vh] w-full overflow-y-scroll 2xl:flex bg-gradient-to-r from-[#132231] to-[#132231] via-[#132231] lg:to-[transparent]">
     <div class="hidden w-36 2xl:flex justify-center pt-12 cursor-pointer" @click="showProjectDescription = false">
         <i class="fa-solid fa-xmark text-brandgreen text-3xl"></i>
