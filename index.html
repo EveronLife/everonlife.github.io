@@ -149,9 +149,9 @@
 
         <div @click="showProjectDescription = true; scrollTo(0,0)" class="flex mt-14 items-center group cursor-pointer">
             <div class="rounded bg-brandgreen h-12 w-12 grid place-items-center">
-                <i class="fa fa-info text-2xl text-white mr-[0.5px]"></i>
+                <i class="fa fa-info text-2xl text-[#132231] mr-[0.5px] animate-pulse"></i>
             </div>
-            <span class="group-hover:text-white/80 transition-all ml-4 text-xl font-semibold underline">Read project description</span>
+            <span class="group-hover:text-white/80 transition-all ml-4 text-xl font-semibold uppercase">Read project description</span>
         </div>
 
     </div>
@@ -166,40 +166,40 @@
         x-transition:leave-end="transform opacity-0 translate-y-10"
         x-show.transition.200="showProjectDescription"
         x-cloak
-        class="absolute top-0 h-[100vh] w-full overflow-y-scroll 2xl:flex bg-gradient-to-r from-[#132231] to-[#132231] via-[#132231] lg:to-[transparent]">
+        class="absolute top-0 2xl:h-[100vh] w-full overflow-y-scroll 2xl:flex bg-gradient-to-r from-[#132231] to-[#132231] via-[#132231] lg:to-[transparent]">
     <div class="hidden w-36 2xl:flex justify-center pt-12 cursor-pointer" @click="showProjectDescription = false">
         <i class="fa-solid fa-xmark text-brandgreen text-3xl"></i>
     </div>
 
-    <dl @click.away="showProjectDescription = false" class="px-12 lg:pl-0 lg:pr-36 pt-12 h-full w-full 2xl:w-1/2">
+    <dl @click.away="showProjectDescription = false" class="px-12 lg:pl-0 lg:pr-36 pt-12 h-full 2xl:w-full 2xl:w-1/2">
         <dt class="text-brandgreen font-semibold text-2xl">What is Everon Life?</dt>
-        <dd class="!leading-[2.5] text-white text-lg">Everon Life is a community-driven Arma Reforger RPG open source
+        <dd class="!leading-[1.8] text-white text-lg mt-2">Everon Life is a community-driven Arma Reforger RPG open source
             framework. “Community-driven” is not just a buzzword. Our vision is to develop a framework with and for the
             community. There are almost no restrictions regarding participation. Through our high quality standards, our
             love for the community and our mature collaboration guidelines, we guarantee full control and transparency.
         </dd>
 
-        <dt class="text-brandgreen font-semibold text-2xl mt-4">Who are we?</dt>
-        <dd class="!leading-[2.5] text-white text-lg">The team is made up of experienced Arma and DayZ veterans who have
+        <dt class="text-brandgreen font-semibold text-2xl mt-12">Who are we?</dt>
+        <dd class="!leading-[1.8] text-white text-lg mt-2">The team is made up of experienced Arma and DayZ veterans who have
             done impressive work over the last decade. We are deeply rooted in the Bohemia Interactive universe. To
             ensure the success of this endeavor, it requires a passionate community and a dedicated core team. In the
             near future, we will publish a Core Team page where we introduce ourselves as a team.
         </dd>
 
-        <dt class="text-brandgreen font-semibold text-2xl mt-4">Why Open Source?</dt>
-        <dd class="!leading-[2.5] text-white text-lg">In the past we have often seen and experienced hate, envy and
+        <dt class="text-brandgreen font-semibold text-2xl mt-12">Why Open Source?</dt>
+        <dd class="!leading-[1.8] text-white text-lg mt-2">In the past we have often seen and experienced hate, envy and
             strife in almost all communities. We want to prevent this from happening again by offering an open and free
             framework that benefits everyone. We want to direct the energy of the community in a positive direction to
-            create something awesome together.
+            create something awesome together. <br><br>
 
-            <p class="font-bold underline">Please note:</p>
-            <p>We promise that the project will be made available to everyone
+            <p class="text-brandgreen">Please note:</p>
+            <p class="font-semibold">We promise that the project will be made available to everyone
             without exception from the first second under a permissive non-copy-left license.</p>
         </dd>
 
-        <dt class="text-brandgreen font-semibold text-2xl mt-4">What are our plans for the future</dt>
+        <dt class="text-brandgreen font-semibold text-2xl mt-12">What are our plans for the future</dt>
 
-        <dd class="!leading-[2.5] text-white text-lg">We are currently working hard on the contributor guidelines to
+        <dd class="!leading-[1.8] text-white text-lg mt-2">We are currently working hard on the contributor guidelines to
             enable and make it as easy as possible to contribute to this community endeavor as soon as possible. We are
             also finalizing our first draft of the roadmap and baseline requirements, we will be happy to hear your
             feedback and thoughts.
